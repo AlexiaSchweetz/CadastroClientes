@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alesi\\CadastroClientes\\backend\\CadastroClientes.csproj": {}
+    "C:\\Users\\alesi\\CadastroClientes\\Backend\\CadastroClientes.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alesi\\CadastroClientes\\backend\\CadastroClientes.csproj": {
+    "C:\\Users\\alesi\\CadastroClientes\\Backend\\CadastroClientes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alesi\\CadastroClientes\\backend\\CadastroClientes.csproj",
+        "projectUniqueName": "C:\\Users\\alesi\\CadastroClientes\\Backend\\CadastroClientes.csproj",
         "projectName": "CadastroClientes",
-        "projectPath": "C:\\Users\\alesi\\CadastroClientes\\backend\\CadastroClientes.csproj",
+        "projectPath": "C:\\Users\\alesi\\CadastroClientes\\Backend\\CadastroClientes.csproj",
         "packagesPath": "C:\\Users\\alesi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alesi\\CadastroClientes\\backend\\obj\\",
+        "outputPath": "C:\\Users\\alesi\\CadastroClientes\\Backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alesi\\AppData\\Roaming\\NuGet\\NuGet.Config"

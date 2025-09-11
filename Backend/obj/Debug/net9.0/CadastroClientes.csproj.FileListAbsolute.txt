@@ -310,3 +310,4 @@ C:\Users\alesi\CadastroClientes\backend\obj\Debug\net9.0\refint\CadastroClientes
 C:\Users\alesi\CadastroClientes\backend\obj\Debug\net9.0\CadastroClientes.pdb
 C:\Users\alesi\CadastroClientes\backend\obj\Debug\net9.0\CadastroClientes.genruntimeconfig.cache
 C:\Users\alesi\CadastroClientes\backend\obj\Debug\net9.0\ref\CadastroClientes.dll
+C:\Users\alesi\CadastroClientes\backend\obj\Debug\net9.0\CadastroClientes.sourcelink.json

@@ -93,6 +93,53 @@ namespace CadastroClientes.Controllers
             return Ok(clientes);
         }
 
+        [HttpPatch("{id}")]
+        public IActionResult Atualizar(int id, [FromBody] AtualizarClienteDto dto)
+        {
+            var cliente = _context.Clientes.FirstOrDefault(c => c.Id == id);
+            if (cliente == null) return NotFound("Cliente não encontrado.");
+
+            if (!ModelState.IsValid) return BadRequest(ModelState);
+
+            if (dto.Nome != null) cliente.Nome = dto.Nome;
+            if (dto.Email != null) cliente.Email = dto.Email;
+            if (dto.Telefone != null) cliente.Telefone = dto.Telefone;
+            if (dto.DataNascimento != null) cliente.DataNascimento = dto.DataNascimento.Value;
+
+            _context.SaveChanges();
+
+            return Ok(cliente);
+        }
+
+        [HttpPatch("alterar-senha/{id}")]
+        public IActionResult AlterarSenha(int id, [FromBody] AtualizarSenhaDto dto)
+        {
+            var cliente = _context.Clientes.Find(id);
+            if (cliente == null) return NotFound();
+
+            if (cliente.SenhaHash != HashPassword(dto.SenhaAtual))
+                return BadRequest("Senha atual incorreta.");
+
+            cliente.SenhaHash = HashPassword(dto.NovaSenha);
+            _context.SaveChanges();
+
+            return Ok(new { message = "Senha alterada com sucesso!" });
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            var cliente = _context.Clientes.FirstOrDefault(c => c.Id == id);
+            if (cliente == null) return NotFound("Cliente não encontrado.");
+
+            _context.Clientes.Remove(cliente);
+            _context.SaveChanges();
+
+            return Ok(new { message = "Cliente deletado com sucesso." });
+        }
+
+
+
         private string HashPassword(string password)
         {
             using var sha256 = SHA256.Create();

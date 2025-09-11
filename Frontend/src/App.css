@@ -59,3 +59,47 @@ button {
 .view {
   margin-top: 0;
 }
+
+.hotbar {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin: 0 11px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #515151;
+  border: 1px solid #242424;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  border-radius: 20px;
+}
+
+.dropdown-content button {
+  padding: 10px;
+  text-align: left;
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: auto;
+
+}
+
+.dropdown-content button:hover {
+  background-color: #333333;
+}
