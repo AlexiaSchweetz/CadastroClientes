@@ -74,7 +74,7 @@ Front disponível em: http://localhost:3000
   "nome": "Ana Letícia",<br>
   "email": "ana@email.com",<br>
   "senha": "senha123",<br>
-  "cpf": "12345678901",
+  "cpf": "12345678901",<br>
   "dataNascimento": "1990-01-01",<br>
   "telefone": "(21)98765-4321"<br>
 }<br><br>
